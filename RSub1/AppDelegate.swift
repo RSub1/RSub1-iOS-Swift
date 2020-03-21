@@ -11,10 +11,20 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let kMyAPIKey = "<API-KEY>";
+    let kBackgroundModeSaveKey = "NearbyBackgroundEnabled";
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let um = UserManager()
+        let user = um.getUser()
+        
+        if let notNiluser = user {
+            // do something incredible with notNiluser
+            print(notNiluser.uuid)
+        }
+        
         return true
     }
 
