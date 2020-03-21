@@ -17,6 +17,7 @@ class ViewController: UIViewController {
 
     @IBAction func activeButtonClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "ShowTracker", sender: self)
+        NearByMessageApi.startSharing(withName: "iPhone")
     }
 }
 
