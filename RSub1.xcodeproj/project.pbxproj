@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		059BCF5424274EA300BEB989 /* NearbyMessagesApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BCF5324274EA300BEB989 /* NearbyMessagesApiKey.swift */; };
+		059BCF562427569600BEB989 /* DevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BCF552427569600BEB989 /* DevicesTableViewController.swift */; };
+		059BCF58242759F200BEB989 /* NearbyMessagePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059BCF57242759F200BEB989 /* NearbyMessagePayload.swift */; };
 		219110A8F373543BD704B453 /* Pods_RSub1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0630DD7B2D6782497116A755 /* Pods_RSub1.framework */; };
 		E107621F242697910089A7DE /* NearByMessagesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107621E242697910089A7DE /* NearByMessagesApi.swift */; };
 		E1076223242698CD0089A7DE /* NearByModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1076222242698CD0089A7DE /* NearByModel.swift */; };
@@ -25,6 +27,8 @@
 		0574F4B2955FAB9B2327ECDE /* Pods-RSub1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSub1.debug.xcconfig"; path = "Target Support Files/Pods-RSub1/Pods-RSub1.debug.xcconfig"; sourceTree = "<group>"; };
 		058971472426C7F1008C5C50 /* GNSMessagesBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNSMessagesBridge.h; sourceTree = "<group>"; };
 		059BCF5324274EA300BEB989 /* NearbyMessagesApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyMessagesApiKey.swift; sourceTree = "<group>"; };
+		059BCF552427569600BEB989 /* DevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewController.swift; sourceTree = "<group>"; };
+		059BCF57242759F200BEB989 /* NearbyMessagePayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyMessagePayload.swift; sourceTree = "<group>"; };
 		0630DD7B2D6782497116A755 /* Pods_RSub1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSub1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8AF047DCE81E4E0382867C /* Pods-RSub1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSub1.release.xcconfig"; path = "Target Support Files/Pods-RSub1/Pods-RSub1.release.xcconfig"; sourceTree = "<group>"; };
 		E107621E242697910089A7DE /* NearByMessagesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByMessagesApi.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				E1076222242698CD0089A7DE /* NearByModel.swift */,
 				058971472426C7F1008C5C50 /* GNSMessagesBridge.h */,
 				059BCF5324274EA300BEB989 /* NearbyMessagesApiKey.swift */,
+				059BCF57242759F200BEB989 /* NearbyMessagePayload.swift */,
 			);
 			path = NearByMessagesApi;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				E1E2449024267F73000ACD1B /* AppDelegate.swift */,
 				E1E2449224267F73000ACD1B /* SceneDelegate.swift */,
 				E1E2449424267F73000ACD1B /* ViewController.swift */,
+				059BCF552427569600BEB989 /* DevicesTableViewController.swift */,
 				E1E2449624267F73000ACD1B /* Main.storyboard */,
 				E1E2449924267F75000ACD1B /* Assets.xcassets */,
 				E1E2449B24267F75000ACD1B /* LaunchScreen.storyboard */,
@@ -250,9 +256,11 @@
 			files = (
 				E1076223242698CD0089A7DE /* NearByModel.swift in Sources */,
 				E1E2449524267F73000ACD1B /* ViewController.swift in Sources */,
+				059BCF562427569600BEB989 /* DevicesTableViewController.swift in Sources */,
 				E10762272426A9CF0089A7DE /* UserModel.swift in Sources */,
 				E107621F242697910089A7DE /* NearByMessagesApi.swift in Sources */,
 				E1E244A5242689CD000ACD1B /* TrackerViewController.swift in Sources */,
+				059BCF58242759F200BEB989 /* NearbyMessagePayload.swift in Sources */,
 				E1E2449124267F73000ACD1B /* AppDelegate.swift in Sources */,
 				E10762262426A4890089A7DE /* UserManager.swift in Sources */,
 				059BCF5424274EA300BEB989 /* NearbyMessagesApiKey.swift in Sources */,

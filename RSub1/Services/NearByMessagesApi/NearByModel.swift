@@ -10,5 +10,7 @@ import Foundation
 
 struct NearByModel: Codable {
     var uuid: String
-    var timeStamp: Int
+    var distance: Int?
+    var startExposure: Int
+    var endExposure: Int?
 }
