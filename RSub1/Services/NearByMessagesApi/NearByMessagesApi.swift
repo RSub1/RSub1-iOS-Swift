@@ -11,7 +11,7 @@ import UIKit
 
 struct NearByMessageApi {
     
-    private static let myAPIKey = "<API-Key>"
+    private static let myAPIKey = NearByMessageApiKey.myAPIKey
     
     private static var nearbyPermission: GNSPermission!
 
