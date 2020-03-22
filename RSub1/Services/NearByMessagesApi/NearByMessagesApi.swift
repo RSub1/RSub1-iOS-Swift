@@ -23,9 +23,14 @@ struct NearByMessageApi {
     private static var currentExposure: [NearByModel] = []
     
     static func initialize() {
+        let userMgr = UserManager()
+        if let user = userMgr.getUser() {
+            devices = user.nearByList
+        }
+        
         GNSPermission.setGranted(!GNSPermission.isGranted())
         
-//        GNSMessageManager.setDebugLoggingEnabled(true)
+        GNSMessageManager.setDebugLoggingEnabled(true)
 
         // Create the message manager, which lets you publish messages and subscribe to messages
         // published by nearby devices.
@@ -114,8 +119,12 @@ struct NearByMessageApi {
             interaction.endExposure = Int(NSDate().timeIntervalSince1970)
             currentExposure.remove(at: interactionIndex)
             devices.append(interaction)
+
+            let userMgr = UserManager()
+            if var user = userMgr.getUser() {
+                user.nearByList = devices
+                _ = userMgr.set(user)
+            }
         }
-        
      }
-    
 }
